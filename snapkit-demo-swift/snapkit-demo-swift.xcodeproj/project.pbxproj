@@ -56,15 +56,31 @@
 		88C644BC2805091E00463359 /* snapkit-demo-swift */ = {
 			isa = PBXGroup;
 			children = (
-				88C644BD2805091E00463359 /* AppDelegate.swift */,
-				88C644BF2805091E00463359 /* SceneDelegate.swift */,
-				88C644C12805091E00463359 /* ViewController.swift */,
+				88C644D12805096200463359 /* Application */,
+				88C644D22805096E00463359 /* Controller */,
 				88C644C32805091E00463359 /* Main.storyboard */,
 				88C644C62805091F00463359 /* Assets.xcassets */,
 				88C644C82805091F00463359 /* LaunchScreen.storyboard */,
 				88C644CB2805091F00463359 /* Info.plist */,
 			);
 			path = "snapkit-demo-swift";
+			sourceTree = "<group>";
+		};
+		88C644D12805096200463359 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				88C644BD2805091E00463359 /* AppDelegate.swift */,
+				88C644BF2805091E00463359 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		88C644D22805096E00463359 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				88C644C12805091E00463359 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
