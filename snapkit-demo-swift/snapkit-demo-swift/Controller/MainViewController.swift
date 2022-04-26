@@ -132,7 +132,7 @@ class MainViewController: UIViewController {
     private func remakeSmallerViewLayout() {
         UIView.animate(withDuration: 0.5, delay: 0.0, options: .transitionCurlUp) {
             if self.smallerViewLayoutChanged {
-                /// place the smaller window to center of the parent view
+                /// place the smaller view to center of the parent view
                 /// notice you use `remakeContraints` method
                 self.smallerView.snp.remakeConstraints { make in
                     make.center.equalToSuperview()
@@ -140,7 +140,7 @@ class MainViewController: UIViewController {
                 }
                 
             } else {
-                /// palce the smaller window to the upper-left of the parent view
+                /// palce the smaller view to the upper-left of the parent view
                 self.smallerView.snp.remakeConstraints { make in
                     make.top.equalToSuperview().inset(20)
                     make.leading.equalToSuperview().inset(20)
@@ -166,7 +166,7 @@ class MainViewController: UIViewController {
         }
         
         /// notice that you can re-use the same auto layout code here again.
-        /// That is because SnapKit does not refer to the parent view explicitly, making it possible to automatically adapting auto layout to a new parent view
+        /// That is because SnapKit does not refer to the parent view explicitly, making it possible to automatically adapt auto layout to a new parent view
         self.setSmallerViewLayout()
         self.smallerViewParentChanged = !self.smallerViewParentChanged
         self.view.layoutIfNeeded()
